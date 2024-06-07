@@ -27,7 +27,7 @@ const Header = () => {
             </Navbar>
             <div className="header-subtitle">
                 <Container>
-                    Tu éxito es nuestro objetivo
+                    AUTOMATIZACION DE EQUIPOS. REPARACION DE EQUIPOS. MAQUINADOS INDUSTRIALES. Y MAS
                 </Container>
             </div>
         </>

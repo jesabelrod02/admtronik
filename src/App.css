@@ -31,14 +31,23 @@ html, body, #root {
 
 .nav-link {
   color: white; /* Establece el color de los enlaces a blanco */
-  padding: 0 15px; /* Añade un padding horizontal de 15px a cada lado */
+  padding: 10px 15px; /* Añade un padding horizontal de 15px a cada lado */
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
+  background-color: #43b3a8; /* Color de fondo de los enlaces */
+  border-radius: 0; /* Elimina el redondeo de los bordes */
+  margin: 5px 0; /* Añade un pequeño margen vertical */
+  line-height: 20px;/* Añade un padding horizontal de 15px a cada lado */
+  font-family: blog;
+  font-size: 18px;
 }
 
 .header-subtitle {
   text-align: center; /* Centra el texto horizontalmente */
   padding: 10px 0; /* Añade padding vertical para separación */
-  color: white; /* Establece el color del texto a blanco */
-  font-size: 18px; /* Tamaño de fuente más grande para visibilidad */
+  color: white !important; /* Establece el color del texto a blanco y fuerza su aplicación */
+  font-size: 14px; /* Establece el tamaño del texto a 14px */
+  font-family: 'Blogb', sans-serif; /* Cambia la familia de fuentes a 'Blogb' */
+  letter-spacing: 3px; /* Aumenta el espaciado entre letras a 3px */
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor lectura sobre la imagen */
 }
 
