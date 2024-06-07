@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../assets/img_principal-min.png'; // Asegúrate que la ruta es correcta
+import heroImage from '../assets/img_principal-min.png'; 
 import { Container, Row, Col } from 'react-bootstrap';
 
 const HeroSection = () => {

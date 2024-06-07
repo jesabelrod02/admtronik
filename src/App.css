@@ -119,10 +119,59 @@ html, body, #root {
 }
 
 
-/* Secciones de contenido */
-.content-section {
-  padding: 40px 0;
+/* Estilos de ImagesTextSection */
+.images-text-section-container {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 100%;
 }
+
+
+.images-text-section-container .row {
+  flex-wrap: nowrap;
+  display: inline-flex;
+}
+
+.images-text-section-text {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: #333;
+}
+
+.images-text-section-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.images-text-section-title {
+  font-weight: bold;
+  color: #005960;
+  text-align: center;
+}
+
+.images-text-section-link {
+  text-decoration: none;
+  color: #007bff;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #007bff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.images-text-section-link:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+
+
 
 /* Estilos para el footer */
 .footer {
