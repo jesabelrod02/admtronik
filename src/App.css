@@ -55,27 +55,68 @@ html, body, #root {
 
 /* Estilos para la sección principal */
 .hero-section {
-  background-image: url('/path-to-hero-image.jpg');
+  
+  background-image: url('assets/img_principal-min.png'); /* Reemplaza con la ruta real de tu imagen de fondo */
+  text-align: right; /* Alinea el texto a la derecha */
+  width: 855px; /* Ancho especificado */
+  padding: 50px 100px; /* Padding para contenido interno */
+  display: flex; /* Uso de Flexbox */
+  flex-direction: column; /* Los elementos internos se apilan verticalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+  margin: auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; 
   background-size: cover;
   background-position: center;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: white;
-  text-align: center;
+  text-align: left;
+  margin-top: 3.5rem;
 }
 
-/* Botones con estilo personalizado */
+.hero-container {
+  width: 55%;   
+  background-color: rgba(0, 0, 0, 0.688); /* Fondo semi-transparente */
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  text-align: right;
+  font-family: blog;
+  font-size: 16px;
+  margin-left: 35rem;
+  
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  text-align: right;
+  margin-right: 30px;
+  color: #67fff0
+}
+
 .btn-custom {
   background-color: #0097A7;
   border: none;
+  padding: 10px 20px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: 30px;
+  margin-bottom: 35px;
+
 }
 
 .btn-custom:hover {
   background-color: #007B8A;
 }
+
+.hero-description {
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: right;
+  margin-right: 30px;
+  color: #43b3a8;
+}
+
 
 /* Secciones de contenido */
 .content-section {
@@ -105,12 +146,4 @@ html, body, #root {
   height: auto;
 }
 
-/* Asegurarse que los contenedores de Bootstrap ocupan toda la altura posible */
-.container, .container-fluid {
-  height: 100%; /* Asegura que se expandan en altura */
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: auto;
-  margin-left: auto;
-}
 
