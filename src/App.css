@@ -1,116 +1,220 @@
-/* Estilos generales */
 html, body, #root {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  height: 100%; /* Asegura que ocupen toda la altura de la ventana */
-  min-height: 100vh; /* Asegura que ocupen al menos la altura de la pantalla */
-  width: 100%; /* Asegura que ocupen toda la anchura disponible */
-  overflow-x: hidden; /* Previene el desbordamiento horizontal en caso de que exista */
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Arial', sans-serif !important;
+  height: 100% !important; /* Asegura que ocupen toda la altura de la ventana */
+  min-height: 100vh !important; /* Asegura que ocupen al menos la altura de la pantalla */
+  width: 100% !important; /* Asegura que ocupen toda la anchura disponible */
+  overflow-x: hidden !important; 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, #FFFFFF 25%), url('assets/fondo-min.png') top/cover no-repeat !important;
 }
 
 /* Estilos para el header */
 .header {
-  background-image: url('assets/barra_header-min-2.png'); /* Añade la imagen de fondo */
-  color: white;
-  padding-left: 30px; /* Añade padding al lado izquierdo */
-  padding-right: 30px; /* Añade padding al lado derecho */
-  background-size: cover; /* Asegura que la imagen cubra todo el espacio disponible */
-  background-position: center; /* Centra la imagen en el fondo */
-  min-height: 80px; /* Hace la barra de navegación más alta */
+  background-image: url('assets/barra_header-min-2.png') !important; /* Añade la imagen de fondo */
+  color: white !important;
+  padding-left: 30px !important; /* Añade padding al lado izquierdo */
+  padding-right: 30px !important; /* Añade padding al lado derecho */
+  background-size: cover !important; /* Asegura que la imagen cubra todo el espacio disponible */
+  background-position: center !important; /* Centra la imagen en el fondo */
+  min-height: 80px !important; /* Hace la barra de navegación más alta */
 }
 
 .nav-container {
-  max-width: 1140px; /* o el ancho que prefieras */
-  margin: 0 auto; /* Centra el contenedor */
-  width: 100%; /* Asegura que el contenedor utilice todo el ancho disponible */
-  display: flex; /* Usa flexbox para alinear los elementos */
-  justify-content: space-between; /* Separa los elementos al principio y al final */
-  align-items: center; /* Alinea los elementos verticalmente */
+  max-width: 1140px !important; /* o el ancho que prefieras */
+  margin: 0 auto !important; /* Centra el contenedor */
+  width: 100% !important; /* Asegura que el contenedor utilice todo el ancho disponible */
+  display: flex !important; /* Usa flexbox para alinear los elementos */
+  justify-content: space-between !important; /* Separa los elementos al principio y al final */
+  align-items: center !important; /* Alinea los elementos verticalmente */
 }
 
 .nav-link {
-  color: white; /* Establece el color de los enlaces a blanco */
-  padding: 10px 15px; /* Añade un padding horizontal de 15px a cada lado */
-  text-transform: uppercase; /* Convierte el texto en mayúsculas */
-  background-color: #43b3a8; /* Color de fondo de los enlaces */
-  border-radius: 0; /* Elimina el redondeo de los bordes */
-  margin: 5px 0; /* Añade un pequeño margen vertical */
-  line-height: 20px;/* Añade un padding horizontal de 15px a cada lado */
-  font-family: blog;
-  font-size: 18px;
+  color: white !important; /* Establece el color de los enlaces a blanco */
+  padding: 10px 15px !important; /* Añade un padding horizontal de 15px a cada lado */
+  text-transform: uppercase !important; /* Convierte el texto en mayúsculas */
+  background-color: #43b3a8 !important; /* Color de fondo de los enlaces */
+  border-radius: 0 !important; /* Elimina el redondeo de los bordes */
+  margin: 5px 0 !important; /* Añade un pequeño margen vertical */
+  line-height: 20px !important; /* Añade un padding horizontal de 15px a cada lado */
+  font-family: blog !important;
+  font-size: 18px !important;
 }
 
 .header-subtitle {
-  text-align: center; /* Centra el texto horizontalmente */
-  padding: 10px 0; /* Añade padding vertical para separación */
+  text-align: center !important; /* Centra el texto horizontalmente */
+  padding: 10px 0 !important; /* Añade padding vertical para separación */
   color: white !important; /* Establece el color del texto a blanco y fuerza su aplicación */
-  font-size: 14px; /* Establece el tamaño del texto a 14px */
-  font-family: 'Blogb', sans-serif; /* Cambia la familia de fuentes a 'Blogb' */
-  letter-spacing: 3px; /* Aumenta el espaciado entre letras a 3px */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor lectura sobre la imagen */
+  font-size: 14px !important; /* Establece el tamaño del texto a 14px */
+  font-family: 'Blogb', sans-serif !important; /* Cambia la familia de fuentes a 'Blogb' */
+  letter-spacing: 3px !important; /* Aumenta el espaciado entre letras a 3px */
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Fondo semi-transparente para mejor lectura sobre la imagen */
 }
-
-
 
 /* Estilos para la sección principal */
 .hero-section {
-  background-image: url('/path-to-hero-image.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
+  background-image: url('assets/img_principal-min.png') !important; 
+  text-align: right !important; 
+  width: 75rem !important; 
+  padding: 50px 100px !important; 
+  display: flex !important; 
+  flex-direction: column !important; 
+  justify-content: center !important; 
+  margin: auto !important; 
+  align-items: center !important;
+  height: 50vh !important; 
+  background-size: cover !important;
+  background-position: center !important;
+  color: white !important;
+  text-align: left !important;
+  margin-top: 3.5rem !important;
 }
 
-/* Botones con estilo personalizado */
+.hero-container {
+  width: 60% !important;   
+  height: 500px !important;
+  background-color: rgba(0, 0, 0, 0.688) !important; 
+  padding: 40px !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important; 
+  font-family: blog !important;
+  font-size: 16px !important;
+  margin-left: 35rem !important;
+}
+
+.hero-text h1 {
+  font-size: 36px !important;
+  text-align: right !important;
+  margin-right: 30px !important;
+  color: #67fff0 !important;
+}
+
 .btn-custom {
-  background-color: #0097A7;
-  border: none;
+  background-color: #0097A7 !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  margin: 20px auto 35px 30px !important; /* Ensure proper margins */
+  text-align: center !important; /* Center the text inside the button */
 }
 
 .btn-custom:hover {
-  background-color: #007B8A;
+  background-color: #007B8A !important;
 }
 
-/* Secciones de contenido */
-.content-section {
-  padding: 40px 0;
+.hero-description {
+  margin-top: 20px !important;
+  margin-left: 20px !important;
+  text-align: right !important;
+  margin-right: 30px !important;
+  color: #43b3a8 !important;
+}
+
+/* Estilos de ImagesTextSection */
+.images-text-section-container {
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
+  display: flex !important;
+  justify-content: center !important; /* Centra horizontalmente */
+  align-items: center !important; /* Centra verticalmente */
+  width: 100% !important;
+}
+
+.images-text-section-container .row {
+  flex-wrap: nowrap !important;
+  display: inline-flex !important;
+}
+
+.images-text-section-text {
+  text-align: center !important;
+  font-size: 1.2rem !important;
+  color: #333 !important;
+  max-width: 400px !important;
+  font-family: blogl !important;
+  font-size: 14px !important;
+  color: black !important;
+  text-align: center !important;
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+}
+
+.images-text-section-image {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.images-text-section-title {
+  font-family: blogl !important;
+  font-size: 30px !important;
+  text-align: center !important;
+  color: #005960 !important;
+}
+
+.images-text-section-link {
+  text-decoration: none !important;
+  color: #007bff !important;
+  background-color: transparent !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.25rem !important;
+  border: 1px solid #007bff !important;
+  transition: background-color 0.3s ,color 0.3s !important;
+}
+
+.images-text-section-link:hover {
+  background-color: #007bff !important;
+  color: #ffffff !important;
 }
 
 /* Estilos para el footer */
 .footer {
-  background-color: #005960;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+  background-image: url('assets/barra1-min.png') !important; /* Asegúrate de que esta es la ruta correcta */
+  color: white !important;
+  padding: 0 !important; /* Ajustado para no afectar la cobertura del fondo */
+  text-align: center !important;
+  position: relative !important;
+  width: 100% !important; /* Asegura que el footer ocupe toda la anchura disponible */
+  display: flex !important;
+  justify-content: center !important;
 }
 
-/* Para el componente ImagesTextSection */
-.my-5 {
-  margin-top: 3rem !important;
-  margin-bottom: 3rem !important;
+.footer-social {
+  position: absolute !important;
+  left: 10px !important; /* Ajusta según la necesidad para posicionar los íconos a la izquierda */
+  top: 50% !important; /* Centra verticalmente los íconos */
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
-.text-center {
-  text-align: center;
+.footer-social a {
+  color: white !important; 
+  margin: 5px 0 !important;  
+  font-size: 15px !important; 
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.footer-logo h1 {
+  position: absolute !important;
+  top: 20px !important; 
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  font-size: 48px !important; 
 }
 
-/* Asegurarse que los contenedores de Bootstrap ocupan toda la altura posible */
-.container, .container-fluid {
-  height: 100%; /* Asegura que se expandan en altura */
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: auto;
-  margin-left: auto;
+.footer-text {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  text-align: center !important;
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparente para leer mejor el texto */
+  padding: 10px 0 !important;
 }
 
+/* Clases de FontAwesome */
+.fab {
+  display: inline-block !important;
+  font: normal normal normal 14px/1 FontAwesome !important;
+  font-size: inherit !important;
+  text-rendering: auto !important;
+  -webkit-font-smoothing: antialiased !important;
+}
