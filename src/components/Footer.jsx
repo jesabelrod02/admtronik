@@ -1,12 +1,12 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import footerImage from '../assets/img_principal.png'; // Asegúrate de ajustar la ruta a la imagen correcta
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faGooglePlusG, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
+
     <div className="footer" >
       <Container className="py-3">
         <Row className="justify-content-center mb-3">

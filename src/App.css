@@ -206,7 +206,7 @@ html, body, #root {
   bottom: 0 !important;
   width: 100% !important;
   text-align: center !important;
-  background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparente para leer mejor el texto */
+  background-color: rgba(0, 0, 0, 0.267) !important; /* Semi-transparente para leer mejor el texto */
   padding: 10px 0 !important;
 }
 
@@ -217,4 +217,101 @@ html, body, #root {
   font-size: inherit !important;
   text-rendering: auto !important;
   -webkit-font-smoothing: antialiased !important;
+}
+
+
+/*Form Group*/
+/* Estilos para el formulario de contacto */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh; /* Asegura que el formulario esté centrado verticalmente en la página */
+  padding: 20px;
+  font-family: blog ; /* Aplica la fuente a todo el formulario */
+  font-size: 18px ; 
+}
+
+.image-container {
+  width: 100%; /* Establece el ancho del contenedor de imágenes */
+  display: flex;
+  justify-content: space-between; /* Distribuye las imágenes uniformemente */
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.image-item {
+  flex-basis: 49%; /* Asigna el ancho de cada imagen */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido de la columna */
+}
+
+.image-item img {
+  width: 1500px; /* Hace que la imagen ocupe todo el ancho asignado */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.image-overlay-container {
+  position: relative;
+  width: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+.contact-info {
+  font-family: blogl; /* Aplica la fuente a todo el formulario */
+  font-size: 20px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  color: #6efffd;
+  background-color: rgba(63, 61, 61, 0.477);
+  padding: 20px;
+  width: 50%; /* Ajusta el ancho del contenedor de texto si es necesario */
+}
+
+.form-group-custom {
+  width: 60rem;
+  margin-bottom: 20px !important;
+}
+
+.form-control,
+.form-control:focus {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  border: none !important;
+  border-bottom: 2px solid #ccc !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.form-control:focus {
+  border-bottom: 2px solid #00aaff !important;
+}
+
+.button-area {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.code-input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.button {
+  background-color: #00aaff !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  flex-shrink: 0; /* Evita que el botón cambie de tamaño */
 }
