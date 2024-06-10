@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/Logo1.jpeg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <>
             <Navbar className="header" expand="lg">
                 <Container className="nav-container">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand as={Link} to="/">
                         <img
                             src={logo}
                             height="50"
@@ -17,10 +18,10 @@ const Header = () => {
                     </Navbar.Brand>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="#home">Inicio</Nav.Link>
-                            <Nav.Link href="#about">Nosotros</Nav.Link>
-                            <Nav.Link href="#services">Servicios</Nav.Link>
-                            <Nav.Link href="#contact">Contacto</Nav.Link>
+                            <Nav.Link as={Link} to="/">Inicio</Nav.Link>
+                            <Nav.Link as={Link} to="/about">Nosotros</Nav.Link>
+                            <Nav.Link as={Link} to="/services">Servicios</Nav.Link>
+                            <Nav.Link as={Link} to="/contact">Contacto</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
