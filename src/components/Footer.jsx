@@ -1,37 +1,33 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faGooglePlusG, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import logo from '../assets/admtronik.png'; 
 
 const Footer = () => {
   return (
-
-    <div className="footer" >
-      <Container className="py-3">
-        <Row className="justify-content-center mb-3">
-          <Col md={8} className="text-center">
-            <h1>ADMTRONIK</h1>
+    <footer className="footer">
+      <Container>
+        <Row className="justify-content-between align-items-center py-3">
+          <Col md={4} className="text-md-left text-center">
+            <img src={logo} alt="ADMTRONIK Logo" className="img-fluid" /> {/* Utiliza la imagen en lugar del texto */}
+          </Col>
+          <Col md={4} className="text-md-right text-center footer-social">
+            <a href="#" className="social-icon"><FontAwesomeIcon icon={faFacebookF} /></a>
+            <a href="#" className="social-icon"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="#" className="social-icon"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+            <a href="#" className="social-icon"><FontAwesomeIcon icon={faInstagram} /></a>
           </Col>
         </Row>
-        <Row className="justify-content-center mb-3">
-          <Col className="text-center">
-            <div className="footer-social">
-              <a href="#" className="text-white mx-1"><FontAwesomeIcon icon={faFacebookF} /></a>
-              <a href="#" className="text-white mx-1"><FontAwesomeIcon icon={faTwitter} /></a>
-              <a href="#" className="text-white mx-1"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-              <a href="#" className="text-white mx-1"><FontAwesomeIcon icon={faInstagram} /></a>
-            </div>
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col md={8} className="text-center">
-            <p>ADMTRONIK © Todos los derechos reservados</p>
+        <Row className="justify-content-center footer-text">
+          <Col>
+            <p>ADMTRONINIK © Todos los derechos reservados</p>
             <p>Site developed by E Consulting</p>
           </Col>
         </Row>
       </Container>
-    </div>
+    </footer>
   );
 };
 

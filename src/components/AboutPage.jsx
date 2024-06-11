@@ -11,7 +11,7 @@ const AboutPage = () => {
                 <div className="image-item">
                     <div className="image-overlay-container">
                         <Image src={image2} alt="Imagen de fondo" className="background-image" />
-                        <div className="contact-info">
+                        <div className="mision-info">
                             <p> SOBRE NOSOTROS</p>
                         </div>
                     </div>
@@ -21,7 +21,7 @@ const AboutPage = () => {
                 <div className="image-item">
                     <div className="image-overlay-container">
                         <Image src={image3} alt="Imagen de fondo" className="background-image" />
-                        <div className="contact-info">
+                        <div className="mision-info">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                         </div>
@@ -32,7 +32,7 @@ const AboutPage = () => {
                 <div className="image-item">
                     <div className="image-overlay-container">
                         <Image src={image4} alt="Imagen de fondo" className="background-image" />
-                        <div className="contact-info">
+                        <div className="mision-info">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                         </div>

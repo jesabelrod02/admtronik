@@ -11,12 +11,12 @@ const Header = () => {
                     <Navbar.Brand as={Link} to="/">
                         <img
                             src={logo}
-                            height="50"
+                            height="100"
                             className="d-inline-block align-top"
                             alt="Logo"
                         />
                     </Navbar.Brand>
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="header-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link as={Link} to="/">Inicio</Nav.Link>
                             <Nav.Link as={Link} to="/about">Nosotros</Nav.Link>

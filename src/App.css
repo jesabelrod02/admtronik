@@ -1,17 +1,21 @@
 html, body, #root {
   margin: 0 !important;
   padding: 0 !important;
-  font-family: 'Arial', sans-serif !important;
+  font-family: Roboto, Helvetica, Arial, sans-serif !important;
   height: 100% !important; /* Asegura que ocupen toda la altura de la ventana */
   min-height: 100vh !important; /* Asegura que ocupen al menos la altura de la pantalla */
   width: 100% !important; /* Asegura que ocupen toda la anchura disponible */
-  overflow-x: hidden !important; 
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, #FFFFFF 25%), url('assets/fondo-min.png') top/cover no-repeat !important;
+  overflow-x: hidden !important; /* Evita el desbordamiento horizontal */
+  background-image: url('assets/fondo-min.png')!important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
+
 
 /* Estilos para el header */
 .header {
-  background-image: url('assets/barra_header-min-2.png') !important; /* Añade la imagen de fondo */
+  background-color: #FFFFFF ;/* Añade la imagen de fondo */
   color: white !important;
   padding-left: 30px !important; /* Añade padding al lado izquierdo */
   padding-right: 30px !important; /* Añade padding al lado derecho */
@@ -21,24 +25,28 @@ html, body, #root {
 }
 
 .nav-container {
-  max-width: 1140px !important; /* o el ancho que prefieras */
+  max-width: 1200px !important; /* o el ancho que prefieras */
+  height: 160px !important;
   margin: 0 auto !important; /* Centra el contenedor */
   width: 100% !important; /* Asegura que el contenedor utilice todo el ancho disponible */
   display: flex !important; /* Usa flexbox para alinear los elementos */
   justify-content: space-between !important; /* Separa los elementos al principio y al final */
   align-items: center !important; /* Alinea los elementos verticalmente */
+  flex-wrap: inherit;
+  flex-direction: column;
 }
 
 .nav-link {
-  color: white !important; /* Establece el color de los enlaces a blanco */
   padding: 10px 15px !important; /* Añade un padding horizontal de 15px a cada lado */
   text-transform: uppercase !important; /* Convierte el texto en mayúsculas */
-  background-color: #43b3a8 !important; /* Color de fondo de los enlaces */
+  background-color: #3cc0e5 !important; /* Color de fondo de los enlaces */
   border-radius: 0 !important; /* Elimina el redondeo de los bordes */
-  margin: 5px 0 !important; /* Añade un pequeño margen vertical */
-  line-height: 20px !important; /* Añade un padding horizontal de 15px a cada lado */
-  font-family: blog !important;
+  margin: 5px !important; /* Añade un pequeño margen vertical */
+  line-height: 20px !important; 
+  width: 160px !important;
   font-size: 18px !important;
+  text-align: center !important;
+  text-shadow: 1px 1px 2px #000000
 }
 
 .header-subtitle {
@@ -46,14 +54,13 @@ html, body, #root {
   padding: 10px 0 !important; /* Añade padding vertical para separación */
   color: white !important; /* Establece el color del texto a blanco y fuerza su aplicación */
   font-size: 14px !important; /* Establece el tamaño del texto a 14px */
-  font-family: 'Blogb', sans-serif !important; /* Cambia la familia de fuentes a 'Blogb' */
   letter-spacing: 3px !important; /* Aumenta el espaciado entre letras a 3px */
   background-color: rgba(0, 0, 0, 0.5) !important; /* Fondo semi-transparente para mejor lectura sobre la imagen */
 }
 
 /* Estilos para la sección principal */
 .hero-section {
-  background-image: url('assets/img_principal-min.png') !important; 
+  background-image: url('assets/MaGE.gif') !important; 
   text-align: right !important; 
   width: 75rem !important; 
   padding: 50px 100px !important; 
@@ -67,7 +74,6 @@ html, body, #root {
   background-position: center !important;
   color: white !important;
   text-align: left !important;
-  margin-top: 3.5rem !important;
 }
 
 .hero-container {
@@ -76,37 +82,70 @@ html, body, #root {
   background-color: rgba(0, 0, 0, 0.688) !important; 
   padding: 40px !important;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important; 
-  font-family: blog !important;
-  font-size: 16px !important;
   margin-left: 29rem !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+  color: #ffffff; /* Color del texto */
+  text-shadow: 2px 2px 4px #000000; /* Sombra para mejorar la visibilidad */
+  font-weight: 400;
+  font-size: 1.2rem; /* Tamaño mayor para mejor lectura */
+  line-height: 1.8; /* Espaciado de línea para mejor fluidez */
+  letter-spacing: 0.00938em;
+  text-align: center; /* Alineación central para un impacto visual más fuerte */
+}
+
+.hero-description {
+  margin-top: 20px !important;
+  margin-left: 20px !important;
+  text-align: left !important;
+  margin-right: 30px !important;
+  color: #ffffff !important;
 }
 
 .hero-text h1 {
-  font-size: 36px !important;
+  font-size: 30px !important;
   text-align: right !important;
   margin-right: 30px !important;
-  color: #67fff0 !important;
 }
 
 .btn-custom {
-  background-color: #0097A7 !important;
-  border: none !important;
-  padding: 10px 20px !important;
-  margin: 20px auto 35px 30px !important; /* Ensure proper margins */
-  text-align: center !important; /* Center the text inside the button */
+
+  text-shadow: 2px 2px 4px #000000; /* Sombra para mejorar la visibilidad */
+  font-weight: 300 !important;
+  font-size: 1.2rem; /* Tamaño mayor para mejor lectura */
+  line-height: 1.8; /* Espaciado de línea para mejor fluidez */
+  letter-spacing: 0.00938em;
+  text-align: center; 
+  background-color: #0096a787; /* Color principal del botón */
+  border: none; /* Eliminar bordes */
+  padding: 15px 25px; /* Ajustar el relleno para mejor visualización */
+  margin: 10px auto; /* Margen centrado y consistente */
+  color: #ffffff; /* Color de texto para mejor contraste */
+  font-size: 20px !important; /* Tamaño de fuente legible */
+  font-weight: bold; /* Negrita para destacar el texto */
+  letter-spacing: 1px; /* Espaciado de caracteres para mejor legibilidad */
+  border-radius: 60px !important; /* Bordes redondeados suaves */
+  cursor: pointer; /* Cursor en forma de mano para indicar clickeabilidad */
+  transition: background-color 0.3s, box-shadow 0.2s; /* Transiciones suaves para interacciones */
+  width: 350px;
+
+  /* Efecto hover para mejorar la interacción del usuario */
+  &:hover {
+    background-color: #00838F; /* Oscurecer el color al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para efecto elevado */
+  }
+
+  /* Efecto focus para accesibilidad */
+  &:focus {
+    outline: none; /* Remover el contorno predeterminado */
+    box-shadow: 0 0 0 2px rgba(32, 221, 255, 0.4); /* Sombra exterior para foco */
+  }
 }
 
 .btn-custom:hover {
   background-color: #007B8A !important;
 }
 
-.hero-description {
-  margin-top: 20px !important;
-  margin-left: 20px !important;
-  text-align: right !important;
-  margin-right: 30px !important;
-  color: #43b3a8 !important;
-}
+
 
 /* Estilos de ImagesTextSection */
 .images-text-section-container {
@@ -116,35 +155,52 @@ html, body, #root {
   justify-content: center !important; /* Centra horizontalmente */
   align-items: center !important; /* Centra verticalmente */
   width: 100% !important;
+  
 }
 
 .images-text-section-container .row {
   flex-wrap: nowrap !important;
   display: inline-flex !important;
+  
+
 }
 
-.images-text-section-text {
+.col-teximage{
+  width: auto !important;
   text-align: center !important;
-  font-size: 1rem !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+} 
+
+.images-text-section-text {
+  text-align: left !important;
   color: #333 !important;
-  max-width: 400px !important;
-  font-family: blogl !important;
-  margin-left: 2rem !important;
-  margin-right: 2rem !important;
+  width: 400px !important;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
 }
 
 .images-text-section-image {
-  max-width: 100% !important;
+
+  max-width: 89% !important;
   height: auto !important;
   display: block !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 .images-text-section-title {
-  font-family: blogl !important;
   font-size: 30px !important;
   text-align: center !important;
-  color: #005960 !important;
+  color: #000000 !important;
+  font-weight: 400;
+  letter-spacing: 0.00938em;
+  text-shadow: 2px 2px 5px #000000; 
+  font-size: 1.2rem; /* Tamaño mayor para mejor lectura */
+  line-height: 1.8; /* Espaciado de línea para mejor fluidez */
+  text-align: center;
+  
 }
 
 .images-text-section-link {
@@ -164,48 +220,38 @@ html, body, #root {
 
 /* Estilos para el footer */
 .footer {
-  background-image: url('assets/barra1-min.png') !important; /* Asegúrate de que esta es la ruta correcta */
-  color: white !important;
-  padding: 0 !important; /* Ajustado para no afectar la cobertura del fondo */
-  text-align: center !important;
-  position: relative !important;
-  width: 100% !important; /* Asegura que el footer ocupe toda la anchura disponible */
-  display: flex !important;
-  justify-content: center !important;
+  background-image: url('assets/barra1-min.png');
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .footer-social {
-  position: absolute !important;
-  left: 10px !important; /* Ajusta según la necesidad para posicionar los íconos a la izquierda */
-  top: 50% !important; /* Centra verticalmente los íconos */
-  transform: translateY(-50%) !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
 }
 
-.footer-social a {
-  color: white !important; 
-  margin: 5px 0 !important;  
-  font-size: 15px !important; 
+.social-icon {
+  color: rgb(47, 160, 235);
+  font-size: 30px; 
 }
 
-.footer-logo h1 {
-  position: absolute !important;
-  top: 20px !important; 
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  font-size: 48px !important; 
+.footer h1 {
+  margin-bottom: 0; /* Evitar margen extra en el título */
 }
 
-.footer-text {
-  position: absolute !important;
-  bottom: 0 !important;
-  width: 100% !important;
-  text-align: center !important;
-  background-color: rgba(0, 0, 0, 0.267) !important; /* Semi-transparente para leer mejor el texto */
-  padding: 10px 0 !important;
+.footer-text p {
+  margin-bottom: 0; /* Evitar margen extra en los párrafos */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente para leer mejor el texto */
+  padding: 10px 0;
 }
+
 
 /* Clases de FontAwesome */
 .fab {
@@ -222,11 +268,11 @@ html, body, #root {
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+
   justify-content: center;
   min-height: 65vh; /* Asegura que el formulario esté centrado verticalmente en la página */
   padding: 20px;
-  font-family: blog ; /* Aplica la fuente a todo el formulario */
   font-size: 18px ; 
 }
 
@@ -262,18 +308,23 @@ html, body, #root {
 }
 
 .contact-info {
-  font-family: blogl; /* Aplica la fuente a todo el formulario */
-  font-size: 20px; 
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-230%, +100%);
   text-align: center;
-  font-size: 20px;
-  color: #6efffd;
-  background-color: rgba(63, 61, 61, 0.477);
+  color: #ffffff;
+  background-color: rgba(63, 61, 61, 0.32);
+  border-radius: 20px;
   padding: 20px;
-  width: 50%; /* Ajusta el ancho del contenedor de texto si es necesario */
+  width: 20%; 
+  height: auto;
+  margin: 0px 0px 0.35em;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  text-shadow: 2px 2px 5px #000000; 
 }
 
 .form-group-custom {
@@ -311,4 +362,20 @@ html, body, #root {
   border: none !important;
   padding: 10px 20px !important;
   flex-shrink: 0; /* Evita que el botón cambie de tamaño */
+}
+
+
+
+.mision-info {
+  font-size: 20px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  color: #6efffd;
+  background-color: rgba(63, 61, 61, 0.477);
+  padding: 20px;
+  width: 50%
 }
