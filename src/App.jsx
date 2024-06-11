@@ -5,7 +5,8 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import ImagesTextSection from './components/ImagesTextSection';
 import Footer from './components/Footer';
-import ContactPage from './components/ContactPage'; // Asegúrate de importar la página de contacto
+import ContactPage from './components/ContactPage'; 
+import AboutPage from './components/AboutPage';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<><HeroSection /><ImagesTextSection /></>} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about" element={<AboutPage />} />
           {/* Añade más rutas según sea necesario */}
         </Routes>
         <Footer />

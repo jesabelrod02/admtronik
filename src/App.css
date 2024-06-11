@@ -78,7 +78,7 @@ html, body, #root {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important; 
   font-family: blog !important;
   font-size: 16px !important;
-  margin-left: 35rem !important;
+  margin-left: 29rem !important;
 }
 
 .hero-text h1 {
@@ -125,13 +125,10 @@ html, body, #root {
 
 .images-text-section-text {
   text-align: center !important;
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
   color: #333 !important;
   max-width: 400px !important;
   font-family: blogl !important;
-  font-size: 14px !important;
-  color: black !important;
-  text-align: center !important;
   margin-left: 2rem !important;
   margin-right: 2rem !important;
 }
