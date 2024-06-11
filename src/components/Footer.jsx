@@ -23,7 +23,6 @@ const Footer = () => {
         <Row className="justify-content-center footer-text">
           <Col>
             <p>ADMTRONINIK © Todos los derechos reservados</p>
-            <p>Site developed by E Consulting</p>
           </Col>
         </Row>
       </Container>
